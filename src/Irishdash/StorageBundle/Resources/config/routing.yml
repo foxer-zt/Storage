@@ -1,0 +1,10 @@
+irishdash_storage_homepage:
+    path:     /
+    defaults: { _controller: IrishdashStorageBundle:Default:home }
+
+
+irishdash_storage_show:
+    pattern:  /source/{code}
+    defaults: { _controller: IrishdashStorageBundle:Default:show }
+    requirements:
+        _method:  GET

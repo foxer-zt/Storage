@@ -1,0 +1,45 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: irishdash
+ * Date: 23.10.14
+ * Time: 22:30
+ */
+
+namespace Irishdash\StorageBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="storage")
+ */
+class Storage
+{
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @ORM\Column(type="string", length=30)
+     */
+    protected $name;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    protected $source;
+
+    /**
+     * @ORM\Column(type="string", length=20)
+     */
+    protected $type;
+
+    /**
+     * @ORM\Column(type="string", length=10)
+     */
+    protected $code;
+} 
